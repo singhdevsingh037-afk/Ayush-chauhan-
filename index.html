@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Chauhan | Official Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="langModal" class="modal-overlay">
+        <div class="modal-box">
+            <h2>Select Your Language / अपनी भाषा चुनें</h2>
+            <p>Kripya apni pasandida bhasha chunein:</p>
+            <div class="lang-buttons">
+                <button onclick="selectLanguage('hi')">🇮🇳 हिंदी (Hindi)</button>
+                <button onclick="selectLanguage('en')">🇬🇧 English</button>
+                <button onclick="selectLanguage('hinglish')">💬 Hinglish</button>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="logo">Ayush Chauhan</div>
+        <nav>
+            <a href="#home" class="lang-home">होम</a>
+            <a href="#about" class="lang-about">परिचय</a>
+            <a href="#gauseva" class="lang-gauseva">गौ सेवा</a>
+            <a href="#contact" class="lang-contact">संपर्क</a>
+        </nav>
+        <div class="header-right">
+            <select id="langSelect" onchange="changeLanguageFromDropdown(this.value)">
+                <option value="hi">हिंदी</option>
+                <option value="en">English</option>
+                <option value="hinglish">Hinglish</option>
+            </select>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="lang-hero-title">आयुष चौहान</h1>
+            <p class="tagline lang-hero-tagline">युवा सोच, नया विकास - जन सेवा ही हमारा संकल्प</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn primary-btn lang-btn-join">मूवमेंट से जुड़ें</a>
+                <a href="tel:6386538928" class="btn secondary-btn"><i class="fas fa-phone-alt"></i> Call Now</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="85497.jpg" alt="Ayush Chauhan">
+        </div>
+    </section>
+
+    <section id="gauseva" class="gau-seva-section">
+        <div class="gau-card">
+            <div class="gau-image">
+                <img src="85499.jpg" alt="Gau Mata Seva">
+            </div>
+            <div class="gau-content">
+                <h2 class="lang-gau-title">गौ माता की सेवा हमारा कर्तव्य है</h2>
+                <p class="lang-gau-desc">गौ सेवा और उनकी सुरक्षा के लिए हम सदैव तत्पर हैं। किसी भी समस्या या सहायता के लिए हमसे तुरंत संपर्क करें।</p>
+                <a href="tel:6386538928" class="btn call-btn"><i class="fas fa-phone"></i> Helpline: 6386538928</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2 class="lang-about-title">आयुष चौहान के बारे में</h2>
+        <p class="lang-about-desc">युवाओं के अधिकार, समाज सुधार और जन-जन की समस्याओं के समाधान के लिए सदैव समर्पित। हमारा उद्देश्य हर नागरिक को न्याय और विकास से जोड़ना है।</p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="lang-contact-title">संपर्क करें / Helpdesk</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Direct Contact</h3>
+                <p><i class="fas fa-phone-alt"></i> <strong>Mobile:</strong> <a href="tel:6386538928">6386538928</a></p>
+                <h3>Social Media</h3>
+                <p><i class="fab fa-instagram"></i> <a href="https://instagram.com/ayush_chauhan_1385" target="_blank">@ayush_chauhan_1385</a></p>
+                <p><i class="fab fa-instagram"></i> <a href="https://instagram.com/Krishna-mathur-5701" target="_blank">@Krishna-mathur-5701</a></p>
+            </div>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Aapka sandesh bhej diya gaya hai!');">
+                <input type="text" placeholder="Aapka Naam" required>
+                <input type="tel" placeholder="Mobile Number" required>
+                <input type="text" placeholder="Pincode" required>
+                <textarea placeholder="Apni Samasya Ya Sandesh Likhein" rows="4" required></textarea>
+                <button type="submit" class="btn primary-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Ayush Chauhan Campaign. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://instagram.com/ayush_chauhan_1385" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://instagram.com/Krishna-mathur-5701" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
